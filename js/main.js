@@ -330,12 +330,45 @@
   --------------------------------------------------------- */
   const contactForm = document.getElementById("contactForm");
   const formStatus = document.getElementById("formStatus");
+  const CONTACT_EMAIL = "dalachille350@gmail.com";
+
+  // Messages are delivered via FormSubmit (https://formsubmit.co) — a free
+  // form-to-email relay that needs no account or API key. The first message
+  // ever sent triggers a one-time confirmation email to CONTACT_EMAIL; click
+  // "Activate Form" in it once, and every message after that lands directly
+  // in the inbox. To switch providers later (e.g. EmailJS, Formspree, your
+  // own backend), only this handler needs to change.
   contactForm?.addEventListener("submit", function (e) {
     e.preventDefault();
-    // NOTE: There is no backend wired up yet. Connect this form to a service
-    // such as Formspree, EmailJS, or your own API endpoint to actually send messages.
-    formStatus.textContent = "Thanks for reaching out! (Connect this form to an email service to receive messages.)";
-    contactForm.reset();
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const formData = new FormData(contactForm);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+      _subject: "New portfolio message from " + formData.get("name"),
+      _template: "table"
+    };
+
+    formStatus.textContent = "Sending...";
+    if (submitBtn) submitBtn.disabled = true;
+
+    fetch("https://formsubmit.co/ajax/" + CONTACT_EMAIL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) { if (!res.ok) throw new Error("Request failed"); return res.json(); })
+      .then(function () {
+        formStatus.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+        contactForm.reset();
+      })
+      .catch(function () {
+        formStatus.textContent = "Something went wrong sending your message. Please try WhatsApp instead.";
+      })
+      .finally(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
   });
 
 })();
