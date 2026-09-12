@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dourwe Leba Achille | Software Developer & Graphic Designer — Cameroon</title>
+<meta name="description" content="Portfolio of Dourwe Leba Achille, a software developer and junior graphic designer from Adamawa, Cameroon — building desktop, web, mobile and automation solutions.">
+<meta name="keywords" content="Dourwe Leba Achille, Software Developer Cameroon, Desktop Application Developer Cameroon, Python Developer Cameroon, Full Stack Developer Cameroon, Flutter Developer Cameroon, Database Analyst Cameroon, Graphic Designer Cameroon, Software Engineer Cameroon, Adamawa Cameroon Developer">
+<meta name="author" content="Dourwe Leba Achille">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dourwe Leba Achille | Software Developer & Graphic Designer">
+<meta property="og:description" content="Desktop, web, mobile and automation solutions — built from Adamawa, Cameroon.">
+<meta property="og:image" content="assets/images/profile.svg">
+<meta property="og:locale" content="en_US">
+
+<meta name="theme-color" content="#0b0f19">
+<!-- Replace with a real favicon (.ico/.png) when available -->
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============================== HEADER / NAV ============================== -->
+<header class="site-header" id="siteHeader">
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <nav class="navbar container" aria-label="Primary">
+    <a href="#home" class="logo">
+      <span class="logo-mark">DA</span>
+      <span class="logo-text">Dourwe&nbsp;Leba <strong>Achille</strong></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link" data-nav><i class="bi bi-house-door"></i>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav><i class="bi bi-person"></i>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav><i class="bi bi-cpu"></i>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav><i class="bi bi-code-slash"></i>Projects</a></li>
+        <li><a href="#designs" class="nav-link" data-nav><i class="bi bi-palette"></i>Designs</a></li>
+        <li><a href="#education" class="nav-link" data-nav><i class="bi bi-mortarboard"></i>Education</a></li>
+        <li><a href="#contact" class="nav-link" data-nav><i class="bi bi-envelope"></i>Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/ACHILLE0LEBA" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub profile"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/237671089681" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">
+          <i class="bi bi-sun" aria-hidden="true"></i>
+          <i class="bi bi-moon-stars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="main">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid-lines"></div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+
+    <div class="container hero-layout">
+      <div class="hero-content" data-reveal="fade-right">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Dourwe Leba <span class="accent-text">Achille</span></h1>
+        <p class="hero-role">
+          <span class="hero-role-fixed">I work as a</span>
+          <span class="typed-wrap"><span id="typedRole"></span><span class="type-cursor" aria-hidden="true"></span></span>
+        </p>
+        <p class="hero-desc">I build modern desktop, web and mobile applications, automate business processes with Python, work with databases, and transform ideas into practical digital solutions.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/ACHILLE0LEBA" target="_blank" rel="noopener" class="link-inline">
+            <i class="bi bi-github"></i> View GitHub
+          </a>
+          <a href="https://wa.me/237671089681" target="_blank" rel="noopener" class="link-inline link-whatsapp">
+            <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media" data-reveal="fade-left">
+        <div class="hero-frame">
+          <!-- PLACE YOUR PROFILE IMAGE HERE -->
+          <!-- Replace assets/images/profile.svg with assets/images/profile.jpg -->
+          <img src="assets/images/profile.jpeg" alt="Portrait of Dourwe Leba Achille" class="hero-photo" width="480" height="480" loading="eager">
+          <span class="status-chip"><span class="dot" aria-hidden="true"></span> Available for freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><i class="bi bi-chevron-down"></i></a>
+  </section>
+
+  <!-- ============================== ABOUT ============================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>About Me</h2>
+        <p>A closer look at who I am and what drives my work.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-reveal="fade-right">
+          <p>I'm a software engineering professional based in the Adamawa Region, Cameroon, working across desktop applications, automation, databases, mobile development and graphic design. I enjoy turning practical problems into clean, working software — and giving ideas a strong visual identity when a project needs one.</p>
+          <p>My academic path combines a scientific foundation with focused technical training: a GCE Advanced Level in Science, followed by a Higher National Diploma (HND) in Software Engineering. You can see the full path in the <a href="#education">Education</a> section below.</p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count-to="6">0</span>
+              <span class="stat-label">Development&nbsp;Areas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count-to="28">0</span>
+              <span class="stat-label">Technologies&nbsp;&amp;&nbsp;Skills</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" id="statProjects" data-count-to="0">0</span>
+              <span class="stat-label">Projects&nbsp;Delivered</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-focus" data-reveal="fade-left">
+          <h3 class="about-focus-title">Focus Areas</h3>
+          <ul class="focus-list">
+            <li><i class="bi bi-pc-display"></i><span>Desktop Development</span></li>
+            <li><i class="bi bi-robot"></i><span>Python Automation</span></li>
+            <li><i class="bi bi-layers"></i><span>Full-Stack Development</span></li>
+            <li><i class="bi bi-phone"></i><span>Flutter Development</span></li>
+            <li><i class="bi bi-database"></i><span>Database Analysis</span></li>
+            <li class="focus-design"><i class="bi bi-palette"></i><span>Graphic Design</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SKILLS ============================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>Skills &amp; Expertise</h2>
+        <p>Six areas I actively work in, from interface to database.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card" data-reveal="fade-up">
+          <div class="skill-icon"><i class="bi bi-pc-display"></i></div>
+          <h3>Desktop Development</h3>
+          <ul class="tag-list">
+            <li>Java</li><li>JavaFX</li><li>Python</li><li>Desktop Architecture</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal="fade-up">
+          <div class="skill-icon"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3>Python Automation</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>Automation</li><li>Scripts</li><li>Data Processing</li><li>API Integration</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal="fade-up">
+          <div class="skill-icon"><i class="bi bi-layers"></i></div>
+          <h3>Full-Stack Development</h3>
+          <ul class="tag-list">
+            <li>Frontend</li><li>Backend</li><li>REST APIs</li><li>Authentication</li><li>Database Integration</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal="fade-up">
+          <div class="skill-icon"><i class="bi bi-phone"></i></div>
+          <h3>Flutter Development</h3>
+          <ul class="tag-list">
+            <li>Flutter</li><li>Dart</li><li>Responsive Mobile UI</li><li>API Integration</li>
+          </ul>
+        </article>
+
+        <article class="skill-card" data-reveal="fade-up">
+          <div class="skill-icon"><i class="bi bi-database"></i></div>
+          <h3>Database Analysis</h3>
+          <ul class="tag-list">
+            <li>SQL</li><li>Database Design</li><li>Data Analysis</li><li>Queries</li><li>Data Management</li>
+          </ul>
+        </article>
+
+        <article class="skill-card skill-card-design" data-reveal="fade-up">
+          <div class="skill-icon skill-icon-design"><i class="bi bi-palette"></i></div>
+          <h3>Graphic Design</h3>
+          <ul class="tag-list">
+            <li>Adobe Illustrator</li><li>Branding</li><li>Social Media Design</li><li>Visual Communication</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SERVICES ============================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>What I Can Do</h2>
+        <p>Practical services I can help you or your business with.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-pc-display"></i>
+          <h3>Desktop Application Development</h3>
+          <p>Reliable desktop software built with Java and JavaFX for real business workflows.</p>
+        </article>
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-robot"></i>
+          <h3>Python Automation</h3>
+          <p>Scripts and tools that automate repetitive tasks and connect systems together.</p>
+        </article>
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-globe2"></i>
+          <h3>Full-Stack Web Development</h3>
+          <p>End-to-end web applications, from the interface down to the database.</p>
+        </article>
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-phone"></i>
+          <h3>Flutter Mobile Development</h3>
+          <p>Cross-platform mobile apps with a clean, responsive interface.</p>
+        </article>
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-database"></i>
+          <h3>Database Analysis</h3>
+          <p>Well-structured databases and queries that keep your data reliable and fast.</p>
+        </article>
+        <article class="service-card" data-reveal="fade-up">
+          <i class="bi bi-palette"></i>
+          <h3>Graphic Design</h3>
+          <p>Posters, branding and social media visuals with a clear, professional identity.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROJECTS ============================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>Projects</h2>
+        <p>A selection of what I've built. New projects appear here automatically.</p>
+      </div>
+
+      <div class="filter-bar" id="projectFilters" data-reveal="fade-up">
+        <button class="filter-btn active" data-filter="ALL">All</button>
+        <button class="filter-btn" data-filter="WEB">Web</button>
+        <button class="filter-btn" data-filter="DESKTOP">Desktop</button>
+        <button class="filter-btn" data-filter="MOBILE">Mobile</button>
+        <button class="filter-btn" data-filter="AI">AI</button>
+        <button class="filter-btn" data-filter="AUTOMATION">Automation</button>
+        <button class="filter-btn" data-filter="DATABASE">Database</button>
+      </div>
+
+      <!-- Cards below are generated automatically from js/projects.js -->
+      <div class="cards-grid" id="projectsGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================== DESIGNS ============================== -->
+  <section class="section" id="designs">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>My Designs</h2>
+        <p>Graphic design work — posters, branding, social media and more.</p>
+      </div>
+
+      <div class="filter-bar" id="designFilters" data-reveal="fade-up">
+        <button class="filter-btn active" data-filter="ALL">All</button>
+        <button class="filter-btn" data-filter="POSTER">Poster</button>
+        <button class="filter-btn" data-filter="SOCIAL MEDIA">Social Media</button>
+        <button class="filter-btn" data-filter="BRANDING">Branding</button>
+        <button class="filter-btn" data-filter="LOGO">Logo</button>
+        <button class="filter-btn" data-filter="FLYER">Flyer</button>
+        <button class="filter-btn" data-filter="ADVERTISEMENT">Advertisement</button>
+        <button class="filter-btn" data-filter="UI DESIGN">UI Design</button>
+        <button class="filter-btn" data-filter="OTHER">Other</button>
+      </div>
+
+      <!-- Cards below are generated automatically from js/designs.js -->
+      <div class="cards-grid" id="designsGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================== EDUCATION ============================== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-head" data-reveal="fade-up">
+        <h2>Education</h2>
+        <p>My academic journey so far.</p>
+      </div>
+
+      <ol class="timeline" data-reveal="fade-up">
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <span class="timeline-tag">Secondary Education</span>
+            <h3>GCE Advanced Level — Science</h3>
+            <p>Scientific track with a focus on mathematics and the physical sciences, building the analytical foundation for later technical studies.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <span class="timeline-tag">Higher Education</span>
+            <h3>HND in Software Engineering</h3>
+            <p>Higher National Diploma covering programming, software design and engineering practices applied to real projects.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================== GITHUB ============================== -->
+  <section class="section" id="github-section">
+    <div class="container">
+      <div class="github-panel" data-reveal="fade-up">
+        <i class="bi bi-github github-icon" aria-hidden="true"></i>
+        <h2>Explore My GitHub</h2>
+        <p>Code, experiments and ongoing projects live here — feel free to look around.</p>
+        <div class="github-stats" id="githubStats" aria-live="polite"></div>
+        <a href="https://github.com/ACHILLE0LEBA" target="_blank" rel="noopener" class="btn btn-primary">
+          Explore My GitHub <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CONTACT ============================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info" data-reveal="fade-right">
+        <h2>Let's Talk</h2>
+        <p>Have a project in mind, or just want to say hello? Reach out — I usually reply quickly on WhatsApp.</p>
+
+        <ul class="contact-list">
+          <li>
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://wa.me/237671089681" target="_blank" rel="noopener">+237 671 089 681</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope"></i>
+            <!-- ADD YOUR EMAIL ADDRESS HERE -->
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+          </li>
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <span>Adamawa Region, Cameroon</span>
+          </li>
+        </ul>
+
+        <div class="social-list">
+          <!-- ADD YOUR FACEBOOK LINK HERE -->
+          <a href="#" class="icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <!-- ADD YOUR LINKEDIN LINK HERE -->
+          <a href="#" class="icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <!-- ADD YOUR INSTAGRAM LINK HERE -->
+          <a href="#" class="icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/ACHILLE0LEBA" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal="fade-left" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+        </div>
+        <!-- This form currently has no backend. Connect it to a service such as
+             Formspree, EmailJS or your own server endpoint before going live. -->
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <a href="https://wa.me/237671089681" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+          <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-mark">DA</span>
+      <h3>Dourwe Leba Achille</h3>
+      <p class="footer-tagline">Software Developer • Automation • Full-Stack • Flutter • Database • Graphic Design</p>
+      <p class="footer-location"><i class="bi bi-geo-alt"></i> Adamawa Region, Cameroon</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <nav aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#designs">Designs</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-col">
+      <h4>Find Me</h4>
+      <div class="social-list">
+        <a href="https://github.com/ACHILLE0LEBA" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/237671089681" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <!-- ADD YOUR FACEBOOK LINK HERE -->
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <!-- ADD YOUR LINKEDIN LINK HERE -->
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <!-- ADD YOUR INSTAGRAM LINK HERE -->
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; 2026 DOURWE LEBA ACHILLE. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/237671089681" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with me on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="whatsapp-tooltip">Chat with me</span>
+</a>
+
+<script src="js/projects.js" defer></script>
+<script src="js/designs.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

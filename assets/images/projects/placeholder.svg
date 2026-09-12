@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="prg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10161f"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#prg)"/>
+  <g stroke="#45d8c0" stroke-width="1.5" opacity="0.35" fill="none">
+    <rect x="220" y="140" width="200" height="120" rx="10"/>
+    <line x1="260" y1="170" x2="380" y2="170"/>
+    <line x1="260" y1="195" x2="360" y2="195"/>
+    <line x1="260" y1="220" x2="340" y2="220"/>
+  </g>
+  <text x="320" y="300" font-family="Inter, sans-serif" font-size="15" fill="#6b7280" text-anchor="middle">Image du projet</text>
+  <text x="320" y="322" font-family="Inter, sans-serif" font-size="12" fill="#4b5568" text-anchor="middle">Remplacer dans assets/images/projects/</text>
+</svg>
